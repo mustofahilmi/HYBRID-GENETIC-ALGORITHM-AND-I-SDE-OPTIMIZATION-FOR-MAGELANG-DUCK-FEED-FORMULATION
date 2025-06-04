@@ -1,0 +1,155 @@
+$comparative_results$results$Layer$ISDE_Plus[[24]]$final_iteration
+[1] 5000
+
+$comparative_results$results$Layer$ISDE_Plus[[24]]$algorithm
+[1] "I-SDE+"
+
+
+$comparative_results$results$Layer$ISDE_Plus[[25]]
+$comparative_results$results$Layer$ISDE_Plus[[25]]$best_solution
+ [1]  9.057695 12.621961  7.363641  5.076137 12.418053  8.066019 13.964822  4.566541
+ [9]  0.147159  4.133070  6.849605  8.930845  6.804452
+
+$comparative_results$results$Layer$ISDE_Plus[[25]]$best_evaluation
+$comparative_results$results$Layer$ISDE_Plus[[25]]$best_evaluation$fitness
+[1] 4386733
+
+$comparative_results$results$Layer$ISDE_Plus[[25]]$best_evaluation$cost
+[1] 14706.97
+
+$comparative_results$results$Layer$ISDE_Plus[[25]]$best_evaluation$penalty
+[1] 4372026
+
+$comparative_results$results$Layer$ISDE_Plus[[25]]$best_evaluation$nutrition
+ [1]   15.575327 2501.083484    1.643005    1.392391    1.685402    5.807450    6.071682
+ [8]    9.928947   11.681495    1.869039
+
+$comparative_results$results$Layer$ISDE_Plus[[25]]$best_evaluation$proportions
+ [1]  9.057695 12.621961  7.363641  5.076137 12.418053  8.066019 13.964822  4.566541
+ [9]  0.147159  4.133070  6.849605  8.930845  6.804452
+
+$comparative_results$results$Layer$ISDE_Plus[[25]]$final_iteration
+[1] 5000
+
+$comparative_results$results$Layer$ISDE_Plus[[25]]$algorithm
+[1] "I-SDE+"
+
+
+
+$comparative_results$summary
+    Stage Algorithm Mean_Cost      SD_Cost  Min_Cost  Max_Cost Mean_Penalty
+1 Starter Hybrid_GA  6698.049    0.4950816  6697.072  6698.923     90867.60
+2 Starter ISDE_Plus 12988.762 1468.1902510 10542.018 15954.272   9073754.20
+3  Grower Hybrid_GA  6971.761    0.4264376  6971.220  6972.812     74732.79
+4  Grower ISDE_Plus 13152.637 1575.0180209 10565.724 17074.744  22974802.85
+5   Layer Hybrid_GA  6938.196    0.5082122  6937.229  6939.481     82474.64
+6   Layer ISDE_Plus 12559.274 1296.7160700  9686.365 15791.956   2180012.48
+        SD_Penalty Mean_Fitness          SD_Fitness Success_Rate
+1        0.4951339     97565.65        0.0003870320            0
+2 15309290.3317149   9086742.96 15309097.2376939841            0
+3        0.4266066     81704.55        0.0004584235            0
+4 33507240.7272927  22987955.49 33506964.1451329328            0
+5        0.5082246     89412.84        0.0004625991            0
+6  4608720.3864037   2192571.75  4608718.8197192373            0
+
+$comparative_results$n_runs
+[1] 30
+
+
+$statistical_results
+$statistical_results$Starter
+$statistical_results$Starter$test_type
+[1] "Wilcoxon"
+
+$statistical_results$Starter$main_test
+
+	Wilcoxon rank sum exact test
+
+data:  ga_costs and isde_costs
+W = 0, p-value < 0.00000000000000022
+alternative hypothesis: true location shift is not equal to 0
+
+
+$statistical_results$Starter$posthoc_test
+NULL
+
+$statistical_results$Starter$effect_size
+[1] 1.099057
+
+$statistical_results$Starter$normality_tests
+Hybrid_GA ISDE_Plus 
+0.5808382 0.4062014 
+
+$statistical_results$Starter$levene_test
+Levene's Test for Homogeneity of Variance (center = median)
+      Df F value         Pr(>F)    
+group  1  48.142 0.000000003719 ***
+      58                           
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+$statistical_results$Grower
+$statistical_results$Grower$test_type
+[1] "Wilcoxon"
+
+$statistical_results$Grower$main_test
+
+	Wilcoxon rank sum exact test
+
+data:  ga_costs and isde_costs
+W = 0, p-value < 0.00000000000000022
+alternative hypothesis: true location shift is not equal to 0
+
+
+$statistical_results$Grower$posthoc_test
+NULL
+
+$statistical_results$Grower$effect_size
+[1] 1.099057
+
+$statistical_results$Grower$normality_tests
+ Hybrid_GA  ISDE_Plus 
+0.02484554 0.05151166 
+
+$statistical_results$Grower$levene_test
+Levene's Test for Homogeneity of Variance (center = median)
+      Df F value       Pr(>F)    
+group  1  32.969 0.0000003616 ***
+      58                         
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+$statistical_results$Layer
+$statistical_results$Layer$test_type
+[1] "Wilcoxon"
+
+$statistical_results$Layer$main_test
+
+	Wilcoxon rank sum exact test
+
+data:  ga_costs and isde_costs
+W = 0, p-value < 0.00000000000000022
+alternative hypothesis: true location shift is not equal to 0
+
+
+$statistical_results$Layer$posthoc_test
+NULL
+
+$statistical_results$Layer$effect_size
+[1] 1.099057
+
+$statistical_results$Layer$normality_tests
+Hybrid_GA ISDE_Plus 
+0.8472473 0.4980799 
+
+
+$statistical_results$Layer$levene_test
+Levene's Test for Homogeneity of Variance (center = median)
+      Df F value       Pr(>F)    
+group  1  33.589 0.0000002954 ***
+      58                         
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
